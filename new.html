@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浙江文脉资料库——浙江省博物馆调研成果</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f7f5f0;
+    color: #2c2c2c;
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, #8b1a1a, #b33a3a);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 28px; margin-bottom: 12px; letter-spacing: 2px; }
+  header p { font-size: 15px; opacity: 0.9; }
+  .intro {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+  }
+  .section-title {
+    max-width: 900px;
+    margin: 50px auto 20px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #8b1a1a;
+    border-left: 4px solid #8b1a1a;
+    padding-left: 12px;
+  }
+  .gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+  .card:hover { transform: translateY(-4px); }
+
+  /* 缩略图：鼠标变成放大镜 */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+    cursor: zoom-in;
+    transition: opacity 0.2s;
+  }
+  .card img:hover { opacity: 0.9; }
+
+  .card-body { padding: 16px; }
+  .card-body h3 {
+    font-size: 16px;
+    color: #8b1a1a;
+    margin-bottom: 8px;
+  }
+  .card-body p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    background: #f0e6e6;
+    color: #8b1a1a;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 13px;
+    color: #999;
+    margin-top: 60px;
+    border-top: 1px solid #e5e0d8;
+  }
+
+  /* ===== 图片灯箱 ===== */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    cursor: zoom-out;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    cursor: default;
+    background: #222;
+  }
+  .lightbox-close {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    font-size: 32px;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.8;
+    user-select: none;
+  }
+  .lightbox-close:hover { opacity: 1; }
+  .lightbox-tip {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>浙江文脉资料库</h1>
+  <p>基于浙江省博物馆（之江馆区）的调研成果整理</p >
+</header>
+
+<div class="intro">
+  <p>本资料库为2026年浙江工业大学经济学院暑期社会实践成果之一，旨在通过图文结合的方式，系统整理浙江省博物馆之江馆区的代表性文物与展览信息，为后续浙江历史文化研究、文化科普传播提供资料支持。</p >
+</div>
+
+<div class="section-title">一、史前文明与越地历史（1F 通史陈列馆A）</div>
+<div class="gallery">
+
+  <div class="card">
+    <img src="1.jpg" alt="良渚玉琮王">
+    <div class="card-body">
+      <span class="tag">新石器时代·良渚文化</span>
+      <h3>良渚玉琮王</h3>
+      <p>出土于浙江余杭反山遗址，是目前所见良渚文化玉琮中体量最大、纹饰最精美的一件。琮体四面雕刻神人兽面纹，体现了良渚先民高超的玉器工艺和复杂的精神信仰，是实证中华五千多年文明史的重要物证。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="2.jpg" alt="双鸟朝阳纹牙雕">
+    <div class="card-body">
+      <span class="tag">新石器时代·河姆渡文化</span>
+      <h3>双鸟朝阳纹牙雕</h3>
+      <p>出土于浙江余姚河姆渡遗址，以象牙雕刻而成。画面中央为火焰状太阳纹，两侧各有一只引颈昂首的鸟，构图对称，线条流畅，反映了河姆渡先民的太阳崇拜和原始审美意识。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="3.jpg" alt="伎乐铜屋">
+    <div class="card-body">
+      <span class="tag">春秋·越国</span>
+      <h3>伎乐铜屋</h3>
+      <p>出土于浙江绍兴坡塘，是一座青铜质地的房屋模型。屋内跪坐六名乐伎，分别作击鼓、弹琴、吹笙等姿态，是研究越国音乐文化、建筑形态和礼乐制度的重要实物资料。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="4.jpg" alt="越王者旨於睗剑">
+    <div class="card-body">
+      <span class="tag">战国·越国</span>
+      <h3>越王者旨於睗剑</h3>
+      <p>越王勾践之子鼫与（者旨於睗）的佩剑。剑身刻有鸟虫书铭文，剑格镶嵌绿松石，历经两千余年仍寒光逼人，体现了越国高超的青铜铸造技术，是越地历史的标志性文物。</p >
+    </div>
+  </div>
+
+</div>
+
+<div class="section-title">二、吴越国与宋代文明（2F 通史陈列馆B）</div>
+<div class="gallery">
+
+  <div class="card">
+    <img src="5.jpg" alt="鎏金纯银阿育王塔">
+    <div class="card-body">
+      <span class="tag">五代·吴越国</span>
+      <h3>鎏金纯银阿育王塔</h3>
+      <p>出土于杭州雷峰塔地宫，为吴越国时期所造。塔身通体鎏金，四面雕刻佛本生故事和菩萨像，工艺精湛，是吴越国崇佛文化的集中体现，也是研究五代时期金银器制作和佛教艺术的重要文物。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="6.jpg" alt="北宋彩塑泥菩萨立像">
+    <div class="card-body">
+      <span class="tag">北宋</span>
+      <h3>北宋彩塑泥菩萨立像</h3>
+      <p>出土于温州白象塔。菩萨面容温婉，体态修长，衣饰流畅，彩绘保存较好，体现了宋代佛教造像世俗化、生活化的审美倾向，是宋代彩塑艺术的精品。</p >
+    </div>
+  </div>
+
+</div>
+
+<div class="section-title">三、青瓷与民俗文化（3F 青瓷文化馆 & 民俗文化馆）</div>
+<div class="gallery">
+
+  <div class="card">
+    <img src="7.jpg" alt="元龙泉窑青瓷舟形砚滴">
+    <div class="card-body">
+      <span class="tag">元代·龙泉窑</span>
+      <h3>元龙泉窑青瓷舟形砚滴</h3>
+      <p>造型为一叶扁舟，舱内两人对坐，船篷、船舷刻画细致。釉色青翠温润，是龙泉窑青瓷中的珍品，既具实用功能，又有极高的艺术观赏价值，反映了元代浙江青瓷工艺的巅峰水平。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="8.jpg" alt="万工轿">
+    <div class="card-body">
+      <span class="tag">清末民初·宁波</span>
+      <h3>万工轿</h3>
+      <p>又称“花轿”，因制作需耗费上万工时而得名。轿身采用朱金木雕工艺，装饰有戏文故事、花鸟瑞兽等题材，金碧辉煌，是浙东地区传统婚俗文化的代表性器物，体现了浙江民间工艺的精湛水平。</p >
+    </div>
+  </div>
+
+</div>
+
+<div class="section-title">四、古琴与书画艺术（4F 古琴艺术馆 & 富春山居馆）</div>
+<div class="gallery">
+
+  <div class="card">
+    <img src="9.jpg" alt="唐彩凤鸣岐七弦琴">
+    <div class="card-body">
+      <span class="tag">唐代</span>
+      <h3>唐“彩凤鸣岐”七弦琴</h3>
+      <p>唐代古琴，为著名斫琴师雷威所制。琴身髹漆，琴背刻有“彩凤鸣岐”铭文，音色清越悠远，是唐代古琴艺术的代表作，也是研究中国古代音乐史的重要实物。</p >
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="10.jpg" alt="富春山居图剩山图">
+    <div class="card-body">
+      <span class="tag">元代·黄公望</span>
+      <h3>《富春山居图》（剩山图）</h3>
+      <p>元代画家黄公望所作山水长卷，以富春江为背景，笔墨苍润，意境深远，被誉为“中国十大传世名画”之一。此卷历经火殉分为两段，浙江省博物馆所藏为前段“剩山图”，是浙江文化的瑰宝。</p >
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>浙江工业大学经济学院“寻浙·承脉”暑期社会实践团</p >
+  <p>2026年8月</p >
+</footer>
+
+<!-- ===== 图片灯箱 ===== -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox-tip">点击空白处或按 Esc 关闭</div>
+</div>
+
+<script>
+  (function () {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    // 给所有卡片图片绑定点击事件
+    document.querySelectorAll('.card img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // 禁止背景滚动
+      });
+    });
+
+    // 关闭灯箱
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox(); // 点空白处关闭
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  })();
+</script>
+
+</body>
+</html>
